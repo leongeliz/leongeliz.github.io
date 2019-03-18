@@ -7,11 +7,10 @@ class App extends React.Component {
    constructor(props){
       super(props)
       this.state = {
-         //lastWinner: 0,
-         numberOfBets: 0,
+         lastWinner: 0,
          minimumBet: 0,
          totalBet: 0,
-         //maxAmountOfBets: 0,
+         winOrLose: 0,
       }
 
       if(typeof web3 != 'undefined'){
@@ -22,95 +21,15 @@ class App extends React.Component {
          this.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
       }
 
-      const MyContract = web3.eth.contract(
-         [
-   {
-      "constant": false,
-      "inputs": [],
-      "name": "results",
-      "outputs": [],
-      "payable": true,
-      "stateMutability": "payable",
-      "type": "function"
-   },
-   {
-      "constant": false,
-      "inputs": [
-         {
-            "name": "_amountBet",
-            "type": "uint256"
-         },
-         {
-            "name": "_buttonPress",
-            "type": "uint256"
-         }
-      ],
-      "name": "userBetNum",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-   },
-   {
-      "inputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "constructor"
-   },
-   {
-      "anonymous": false,
-      "inputs": [
-         {
-            "indexed": false,
-            "name": "answer",
-            "type": "uint256"
-         }
-      ],
-      "name": "AnswerSubmitted",
-      "type": "event"
-   },
-   {
-      "anonymous": false,
-      "inputs": [
-         {
-            "indexed": false,
-            "name": "player",
-            "type": "address"
-         },
-         {
-            "indexed": false,
-            "name": "bet",
-            "type": "uint256"
-         },
-         {
-            "indexed": false,
-            "name": "guessedNum",
-            "type": "uint256"
-         }
-      ],
-      "name": "BetSubmitted",
-      "type": "event"
-   },
-   {
-      "anonymous": false,
-      "inputs": [
-         {
-            "indexed": false,
-            "name": "winner",
-            "type": "string"
-         }
-      ],
-      "name": "DisplayResults",
-      "type": "event"
-   },
+      const MyContract = web3.eth.contract([
    {
       "constant": true,
       "inputs": [],
-      "name": "owner",
+      "name": "transactionCost",
       "outputs": [
          {
             "name": "",
-            "type": "address"
+            "type": "uint256"
          }
       ],
       "payable": false,
@@ -130,9 +49,127 @@ class App extends React.Component {
       "payable": false,
       "stateMutability": "view",
       "type": "function"
+   },
+   {
+      "constant": false,
+      "inputs": [
+         {
+            "name": "_buttonPress",
+            "type": "uint256"
+         }
+      ],
+      "name": "userBetNum",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "selected",
+      "outputs": [
+         {
+            "name": "",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "answer",
+      "outputs": [
+         {
+            "name": "",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+         {
+            "name": "",
+            "type": "address"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "constant": false,
+      "inputs": [],
+      "name": "results",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "minimumBet",
+      "outputs": [
+         {
+            "name": "",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "winOrLose",
+      "outputs": [
+         {
+            "name": "",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "totalBet",
+      "outputs": [
+         {
+            "name": "",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+   },
+   {
+      "inputs": [
+         {
+            "name": "_minimumBet",
+            "type": "uint256"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
    }
 ]);
-      this.state.ContractInstance = MyContract.at("0x232cd757a05373c3e3c2e084514e57ecb27f20b6");
+      this.state.ContractInstance = MyContract.at("0xa610e4fbde8386b1a980c412f16105d2f645f903");
       window.a = this.state
    }
 
@@ -158,6 +195,9 @@ class App extends React.Component {
             })
          }
       })
+      // this.state.ContractInstance.winOrLose((err, result) => {
+      //    if ()
+      // })
    }
 
    // Listen for events and executes the voteNumber method
@@ -167,7 +207,7 @@ class App extends React.Component {
          number.addEventListener('click', event => {
             event.target.className = 'number-selected'
             this.voteNumber(parseInt(event.target.innerHTML), done => {
-
+               console.log("pressed button");
                // Remove the other number selected
                for(let i = 0; i < liNodes.length; i++){
                   liNodes[i].className = ''
@@ -192,7 +232,7 @@ class App extends React.Component {
          alert('You must bet more than the minimum')
          cb()
       } else {
-         this.state.ContractInstance.bet(number, {
+         this.state.ContractInstance.userBetNum(number, {
             gas: 300000,
             from: web3.eth.accounts[0],
             value: web3.toWei(bet, 'ether')
@@ -202,14 +242,18 @@ class App extends React.Component {
       }
    }
 
+   //call apporopriate render depending if user has web3 installed
+
+//if this number, set string to be winner/loser
+//in order to rerender to display results, must change state
    render(){
       return (
          <div className="main-container">
             <h1>Bet for your best number and win huge amounts of Ether</h1>
 
                <div className="block">
-                  <b>Number of bets:</b> &nbsp;
-                  <span>{this.state.numberOfBets}</span>
+                  <b>Win or Lose (0 = lose, 1 = win) :</b> &nbsp;
+                  <span>{this.state.winOrLose}</span>
                </div>
 
                <div className="block">
@@ -222,7 +266,7 @@ class App extends React.Component {
                   <span>{this.state.minimumBet} ether</span>
                </div>
 
-            <hr>
+            <hr></hr>
 
             <h2>Vote for the next number</h2>
 
@@ -240,8 +284,8 @@ class App extends React.Component {
                <li>6</li>
                <li>7</li>
                <li>8</li>
-               // <li>9</li>
-               // <li>10</li>
+               <li>9</li>
+               <li>10</li>
             </ul>
 
             <hr></hr>

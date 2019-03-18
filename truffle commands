@@ -1,0 +1,4 @@
+truffle compile
+truffle migrate
+truffle develop
+	creates environment to test things

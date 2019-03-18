@@ -1,0 +1,1263 @@
+Last login: Thu Mar 14 06:14:08 on ttys000
+airbears2-10-142-124-151:~ kpeng$ cd Desktop/blockchainDapp/
+airbears2-10-142-124-151:blockchainDapp kpeng$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.github/
+	LICENSE
+	box-img-lg.png
+	box-img-sm.png
+	bs-config.json
+	contracts/
+	migrations/
+	node_modules/
+	package-lock.json
+	package.json
+	src/
+	test/
+	truffle commands
+	truffle-config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+airbears2-10-142-124-151:blockchainDapp kpeng$ git pull origin master
+From https://github.com/katherinepeng/BlockchainDapp
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm install http-server -g
+/Users/katherinepeng 1/.npm-global/bin/hs -> /Users/katherinepeng 1/.npm-global/lib/node_modules/http-server/bin/http-server
+/Users/katherinepeng 1/.npm-global/bin/http-server -> /Users/katherinepeng 1/.npm-global/lib/node_modules/http-server/bin/http-server
++ http-server@0.11.1
+added 26 packages from 28 contributors in 4.41s
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+-bash: http-server: command not found
+airbears2-10-142-124-151:blockchainDapp kpeng$ cd ~
+airbears2-10-142-124-151:~ kpeng$ cd bloc
+-bash: cd: bloc: No such file or directory
+airbears2-10-142-124-151:~ kpeng$ ls
+AndroidStudioProjects			Music
+Applications				Pictures
+Creative Cloud Files			Public
+Creative Cloud Files (archived) (1)	Sites
+Desktop					contracts
+Documents				iCloud Drive (Archive)
+Downloads				migrations
+Dropbox					node_modules
+IdeaProjects				package-lock.json
+Library					test
+Movies					truffle-config.js
+airbears2-10-142-124-151:~ kpeng$ cd Desktop/
+airbears2-10-142-124-151:Desktop kpeng$ ls
+12418939_10204738398253632_6940899670499707910_o.jpg
+41948614_2121206217897658_1584789953802403840_n.jpg
+AIRHAWKEY.png
+Airhawkey Puck.png
+CS 70
+CS70 CSM worksheets
+Chapter 3 Notes.pdf
+Coding Challenges
+CommService7:30:18.pdf
+CommService8:10:18.pdf
+Flask
+IMG_0141.png
+IMG_0388.jpg
+LAHACKS
+LSCS_finding_help.jpg
+Movie on 7-8-18 at 8.38 PM #3.mov
+Practice_Repo
+Resume:CL:Transcripts
+Screen Shot 2019-01-15 at 2.38.29 PM.png
+Screen Shot 2019-03-03 at 3.32.02 PM.png
+Screen Shot 2019-03-04 at 12.37.56 AM.png
+Screenshot_1541331719.png
+Ziplining
+blockchainDapp
+calhacks2018
+cs61a
+cs61b
+git-cheat-sheet-large01.png
+gitcommands.txt
+inj:surj.png
+trig cheat sheet.pdf
+~$engResume.docx
+airbears2-10-142-124-151:Desktop kpeng$ cd blockchainDapp/
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ truffle
+-bash: truffle: command not found
+airbears2-10-142-124-151:blockchainDapp kpeng$ source ~/.profile
+airbears2-10-142-124-151:blockchainDapp kpeng$ truffle
+Truffle v5.0.6 - a development framework for Ethereum
+
+Usage: truffle <command> [options]
+
+Commands:
+  build     Execute build pipeline (if configuration present)
+  compile   Compile contract source files
+  config    Set user-level configuration options
+  console   Run a console with contract abstractions and commands available
+  create    Helper to create new contracts, migrations and tests
+  debug     Interactively debug any transaction on the blockchain (experimental)
+  deploy    (alias for migrate)
+  develop   Open a console with a local development blockchain
+  exec      Execute a JS module within this Truffle environment
+  help      List all commands or provide information about a specific command
+  init      Initialize new and empty Ethereum project
+  install   Install a package from the Ethereum Package Registry
+  migrate   Run migrations to deploy contracts
+  networks  Show addresses for deployed contracts on each network
+  obtain    Fetch and cache a specified compiler
+  opcode    Print the compiled opcodes for a given contract
+  publish   Publish a package to the Ethereum Package Registry
+  run       Run a third-party command
+  test      Run JavaScript and Solidity tests
+  unbox     Download a Truffle Box, a pre-built Truffle project
+  version   Show version number and exit
+  watch     Watch filesystem for changes and rebuild the project automatically
+
+See more at http://truffleframework.com/docs
+
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:33:55 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:33:55 GMT-0700 (Pacific Daylight Time)] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:33:55 GMT-0700 (Pacific Daylight Time)] "GET /favicon.ico" Error (404): "Not found"
+[Thu Mar 14 2019 15:33:58 GMT-0700 (Pacific Daylight Time)] "GET /src/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:33:59 GMT-0700 (Pacific Daylight Time)] "GET /src/build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:33:59 GMT-0700 (Pacific Daylight Time)] "GET /src/build.js" Error (404): "Not found"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ cd src
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ cd js
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.js		web3.min.js
+bootstrap.min.js	truffle-contract.js
+airbears2-10-142-124-151:js kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:34:21 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:34:30 GMT-0700 (Pacific Daylight Time)] "GET /index.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.js		web3.min.js
+bootstrap.min.js	truffle-contract.js
+airbears2-10-142-124-151:js kpeng$ cd ..
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ open .
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ cd jks
+-bash: cd: jks: No such file or directory
+airbears2-10-142-124-151:src kpeng$ cd js
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:35:09 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:35:09 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:35:09 GMT-0700 (Pacific Daylight Time)] "GET /build.js" Error (404): "Not found"
+^Chttp-server stopped.
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ cd ..
+airbears2-10-142-124-151:src kpeng$ cd ..
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ open .
+airbears2-10-142-124-151:blockchainDapp kpeng$ git remote -v
+origin	https://github.com/katherinepeng/BlockchainDapp.git (fetch)
+origin	https://github.com/katherinepeng/BlockchainDapp.git (push)
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ cd src
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ cd js
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:36:21 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:36:21 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:36:21 GMT-0700 (Pacific Daylight Time)] "GET /build.js" Error (404): "Not found"
+^Chttp-server stopped.
+airbears2-10-142-124-151:js kpeng$ open .
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:36:54 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:36:55 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:36:55 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:36:55 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 15:37:17 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:37:18 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 15:37:18 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ open .
+airbears2-10-142-124-151:js kpeng$ ls
+app.js			index.html		truffle-contract.js
+bootstrap.min.js	index.js		web3.min.js
+airbears2-10-142-124-151:js kpeng$ cd ..
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ cd ..
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ webpack
+-bash: webpack: command not found
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm i -g webpack
+/Users/katherinepeng 1/.npm-global/bin/webpack -> /Users/katherinepeng 1/.npm-global/lib/node_modules/webpack/bin/webpack.js
+
+> fsevents@1.2.7 install /Users/katherinepeng 1/.npm-global/lib/node_modules/webpack/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download 
+[fsevents] Success: "/Users/katherinepeng 1/.npm-global/lib/node_modules/webpack/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" is installed via remote
++ webpack@4.29.6
+added 390 packages from 218 contributors in 16.356s
+airbears2-10-142-124-151:blockchainDapp kpeng$ webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "npm" to install the CLI via "npm install -D".
+Do you want to install 'webpack-cli' (yes/no): yes
+Installing 'webpack-cli' (running 'npm install -D webpack-cli')...
+npm WARN webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+npm WARN pet-shop@1.0.0 No description
+npm WARN pet-shop@1.0.0 No repository field.
+
++ webpack-cli@3.2.3
+added 75 packages from 47 contributors and audited 3662 packages in 6.521s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (/Users/katherinepeng 1/.npm-global/lib/node_modules/webpack/bin/webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm i -g webpack-cli
+/Users/katherinepeng 1/.npm-global/bin/webpack-cli -> /Users/katherinepeng 1/.npm-global/lib/node_modules/webpack-cli/bin/cli.js
+npm WARN webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+
++ webpack-cli@3.2.3
+added 208 packages from 127 contributors in 10.007s
+airbears2-10-142-124-151:blockchainDapp kpeng$ webpack
+/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/bin/cli.js:231
+				throw err;
+				^
+
+Error: Cannot find module 'webpack'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/bin/convert-argv.js:7:24)
+    at Module._compile (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/v8-compile-cache/v8-compile-cache.js:178:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at yargs.parse (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/bin/cli.js:228:14)
+    at Object.parse (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/node_modules/yargs/yargs.js:567:18)
+    at /Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/bin/cli.js:206:8
+    at Object.<anonymous> (/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack-cli/bin/cli.js:500:3)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at module.exports.filename (/Users/katherinepeng 1/.npm-global/lib/node_modules/webpack-cli/node_modules/import-local/index.js:16:66)
+    at /Users/katherinepeng 1/.npm-global/lib/node_modules/webpack-cli/bin/cli.js:13:6
+    at Object.<anonymous> (/Users/katherinepeng 1/.npm-global/lib/node_modules/webpack-cli/bin/cli.js:500:3)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm link webpack
+/Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/webpack -> /Users/katherinepeng 1/.npm-global/lib/node_modules/webpack
+airbears2-10-142-124-151:blockchainDapp kpeng$ webpack
+
+Insufficient number of arguments or no entry found.
+Alternatively, run 'webpack(-cli) --help' for usage info.
+
+Hash: d7a4c3a211c907a2ffd4
+Version: webpack 4.29.6
+Time: 74ms
+Built at: 03/14/2019 3:59:26 PM
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in Entry module not found: Error: Can't resolve './src' in '/Users/katherinepeng 1/Desktop/blockchainDapp'
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ cd src
+airbears2-10-142-124-151:src kpeng$ open package.json 
+airbears2-10-142-124-151:src kpeng$ ls
+css		images		js		pets.json
+fonts		index.html	package.json
+airbears2-10-142-124-151:src kpeng$ cd ..
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+npm ERR! missing script: start
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_00_59_659Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ ls
+LICENSE			contracts		src
+SmartContract.sol	migrations		test
+box-img-lg.png		node_modules		truffle commands
+box-img-sm.png		package-lock.json	truffle-config.js
+bs-config.json		package.json
+airbears2-10-142-124-151:blockchainDapp kpeng$ open package.json 
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack ./src/js/index.js ./build.js
+
+Hash: da30a00a12645eefdeaf
+Version: webpack 4.29.6
+Time: 361ms
+Built at: 03/14/2019 4:02:32 PM
+ 1 asset
+Entrypoint main = main.js
+[0] multi ./src/js/index.js ./build.js 40 bytes {0} [built]
+[1] ./src/js/index.js 291 bytes {0} [built] [failed] [1 error]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in multi ./src/js/index.js ./build.js
+Module not found: Error: Can't resolve './build.js' in '/Users/katherinepeng 1/Desktop/blockchainDapp'
+ @ multi ./src/js/index.js ./build.js main[1]
+
+ERROR in ./src/js/index.js 221:9
+Module parse failed: Unexpected token (221:9)
+You may need an appropriate loader to handle this file type.
+|    render(){
+|       return (
+>          <div className="main-container">
+|             <h1>Bet for your best number and win huge amounts of Ether</h1>
+| 
+ @ multi ./src/js/index.js ./build.js main[0]
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack ./src/js/index.js ./build.js`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_02_32_800Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm i -D webpack react react-dom babel-core babel-loader babel-preset-react babel-preset-env css-loader style-loader json-loader web3@0.20.0
+npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
++ babel-preset-env@1.7.0
++ style-loader@0.18.2
++ babel-preset-react@6.24.1
++ babel-loader@7.1.5
++ css-loader@0.28.11
++ babel-core@6.26.3
++ json-loader@0.5.7
++ react@15.6.2
++ react-dom@15.6.2
++ webpack@4.29.6
++ web3@0.20.0
+added 407 packages from 408 contributors, removed 230 packages, updated 6 packages, moved 6 packages and audited 6907 packages in 32.118s
+found 0 vulnerabilities
+
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm install babel-cli babel-preset-es2015
+npm WARN deprecated babel-preset-es2015@6.24.1: 🙌  Thanks for using Babel: we recommend using babel-preset-env now: please read babeljs.io/env to update! 
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
++ babel-cli@6.26.0
++ babel-preset-es2015@6.24.1
+added 47 packages from 28 contributors and audited 9934 packages in 6.264s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm audit fix
+npm ERR! code ELOCKVERIFY
+npm ERR! Errors were found in your package-lock.json, run  npm install  to fix them.
+npm ERR!     Missing: babel-preset-stage-2@^6.24.1
+npm ERR!     Missing: truffle@^3.4.8
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_04_44_983Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm install
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
+added 84 packages from 320 contributors and audited 10851 packages in 8.049s
+found 3 vulnerabilities (2 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm audit fix
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
+up to date in 3.431s
+fixed 0 of 3 vulnerabilities in 10851 scanned packages
+  1 vulnerability required manual review and could not be updated
+  1 package update for 2 vulns involved breaking changes
+  (use `npm audit fix --force` to install breaking changes; or refer to `npm audit` for steps to fix these manually)
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm audit fix --force
+npm WARN using --force I sure hope you know what you are doing.
+
+> keccak@1.4.0 install /Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/keccak
+> npm run rebuild || echo "Keccak bindings compilation fail. Pure JS implementation will be used."
+
+npm WARN using --force I sure hope you know what you are doing.
+
+> keccak@1.4.0 rebuild /Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/keccak
+> node-gyp rebuild
+
+  CXX(target) Release/obj.target/keccak/src/addon.o
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/include/node'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/src'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/deps/openssl/config'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/deps/openssl/openssl/include'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/deps/uv/include'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/deps/zlib'
+clang: error: no such file or directory: '1/.node-gyp/10.13.0/deps/v8/include'
+make: *** [Release/obj.target/keccak/src/addon.o] Error 1
+gyp ERR! build error 
+gyp ERR! stack Error: `make` failed with exit code: 2
+gyp ERR! stack     at ChildProcess.onExit (/Users/katherinepeng 1/.npm-global/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:262:23)
+gyp ERR! stack     at ChildProcess.emit (events.js:182:13)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:240:12)
+gyp ERR! System Darwin 18.2.0
+gyp ERR! command "/usr/local/bin/node" "/Users/katherinepeng 1/.npm-global/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /Users/katherinepeng 1/Desktop/blockchainDapp/node_modules/keccak
+gyp ERR! node -v v10.13.0
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok 
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
++ truffle@5.0.8
+added 31 packages from 9 contributors, removed 34 packages and updated 21 packages in 17.454s
+fixed 2 of 3 vulnerabilities in 10851 scanned packages
+  1 vulnerability required manual review and could not be updated
+  1 package update for 2 vulns involved breaking changes
+  (installed due to `--force` option)
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack ./src/js/index.js ./build.js
+
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "npm" to install the CLI via "npm install -D".
+Do you want to install 'webpack-cli' (yes/no): yes
+Installing 'webpack-cli' (running 'npm install -D webpack-cli')...
+npm WARN ajv-keywords@3.4.0 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN casino-ethereum@1.0.0 No description
+npm WARN casino-ethereum@1.0.0 No repository field.
+
++ webpack-cli@3.2.3
+added 36 packages from 33 contributors and audited 11880 packages in 6.791s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+Hash: da30a00a12645eefdeaf
+Version: webpack 4.29.6
+Time: 170ms
+Built at: 03/14/2019 4:06:43 PM
+ 1 asset
+Entrypoint main = main.js
+[0] multi ./src/js/index.js ./build.js 40 bytes {0} [built]
+[1] ./src/js/index.js 291 bytes {0} [built] [failed] [1 error]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in multi ./src/js/index.js ./build.js
+Module not found: Error: Can't resolve './build.js' in '/Users/katherinepeng 1/Desktop/blockchainDapp'
+ @ multi ./src/js/index.js ./build.js main[1]
+
+ERROR in ./src/js/index.js 221:9
+Module parse failed: Unexpected token (221:9)
+You may need an appropriate loader to handle this file type.
+|    render(){
+|       return (
+>          <div className="main-container">
+|             <h1>Bet for your best number and win huge amounts of Ether</h1>
+| 
+ @ multi ./src/js/index.js ./build.js main[0]
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack ./src/js/index.js ./build.js`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_06_43_795Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack ./src/js/index.js build.js
+
+Hash: 433a2ef621b39fedbfc2
+Version: webpack 4.29.6
+Time: 400ms
+Built at: 03/14/2019 4:07:41 PM
+ 1 asset
+Entrypoint main = main.js
+[0] multi ./src/js/index.js build.js 40 bytes {0} [built]
+[1] ./src/js/index.js 291 bytes {0} [built] [failed] [1 error]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in multi ./src/js/index.js build.js
+Module not found: Error: Can't resolve 'build.js' in '/Users/katherinepeng 1/Desktop/blockchainDapp'
+ @ multi ./src/js/index.js build.js main[1]
+
+ERROR in ./src/js/index.js 221:9
+Module parse failed: Unexpected token (221:9)
+You may need an appropriate loader to handle this file type.
+|    render(){
+|       return (
+>          <div className="main-container">
+|             <h1>Bet for your best number and win huge amounts of Ether</h1>
+| 
+ @ multi ./src/js/index.js build.js main[0]
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack ./src/js/index.js build.js`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_07_41_553Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack ./src/js/index.js build.js
+
+Hash: 95bb2df2718e2df1339a
+Version: webpack 4.29.6
+Time: 9770ms
+Built at: 03/14/2019 4:13:36 PM
+ 1 asset
+Entrypoint main = build.js
+[104] multi ./src/js/index.js build.js 40 bytes {0} [built]
+[105] ./src/js/index.js 13.9 KiB {0} [built]
+[228] (webpack)/buildin/module.js 497 bytes {0} [built]
+[229] (webpack)/buildin/global.js 472 bytes {0} [built]
+[262] ./src/css/index.css 1010 bytes {0} [built]
+[263] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in multi ./src/js/index.js build.js
+Module not found: Error: Can't resolve 'build.js' in '/Users/katherinepeng 1/Desktop/blockchainDapp'
+ @ multi ./src/js/index.js build.js main[1]
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack ./src/js/index.js build.js`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_13_36_274Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 90b6be458e0c79731438
+Version: webpack 4.29.6
+Time: 6119ms
+Built at: 03/14/2019 4:15:46 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  284 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.9 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (284 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (284 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:16:24 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:16:59 GMT-0700 (Pacific Daylight Time)] "GET /src/build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:16:59 GMT-0700 (Pacific Daylight Time)] "GET /src/build.js" Error (404): "Not found"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ open .
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.151:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:17:49 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:17:49 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:32:09 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:32:10 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:32:11 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: e9f3570477e30cce040c
+Version: webpack 4.29.6
+Time: 945ms
+Built at: 03/14/2019 4:33:16 PM
+ 1 asset
+Entrypoint main = build.js
+[0] ./src/js/index.js 890 bytes {0} [built] [failed] [1 error]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in ./src/js/index.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: Unexpected token (253:13)
+
+  251 |             <h2>Vote for the next number</h2>
+  252 | 
+> 253 |             <!--// <h2> What the fuck</h2>
+      |              ^
+  254 |             // <hr></hr>
+  255 |             // <hr></hr>-->
+  256 | 
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_33_16_256Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 4c0f752ca12dfd7ccc76
+Version: webpack 4.29.6
+Time: 657ms
+Built at: 03/14/2019 4:33:39 PM
+ 1 asset
+Entrypoint main = build.js
+[0] ./src/js/index.js 869 bytes {0} [built] [failed] [1 error]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in ./src/js/index.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: Unexpected token (253:13)
+
+  251 |             <h2>Vote for the next number</h2>
+  252 | 
+> 253 |             <--// <h2> What the fuck</h2>
+      |              ^
+  254 |             // <hr></hr>
+  255 |             // <hr></hr>-->
+  256 | 
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! casino-ethereum@1.0.0 start: `webpack`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the casino-ethereum@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/katherinepeng 1/.npm/_logs/2019-03-14T23_33_39_801Z-debug.log
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 6ce9e795e0e931e25e62
+Version: webpack 4.29.6
+Time: 6643ms
+Built at: 03/14/2019 4:34:05 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:34:18 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:35:02 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:35:15 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 6ce9e795e0e931e25e62
+Version: webpack 4.29.6
+Time: 1826ms
+Built at: 03/14/2019 4:35:36 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 6ce9e795e0e931e25e62
+Version: webpack 4.29.6
+Time: 2054ms
+Built at: 03/14/2019 4:53:36 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:53:47 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^[[A^[[A^[[A^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 5811a17074a2b88fda93
+Version: webpack 4.29.6
+Time: 5254ms
+Built at: 03/14/2019 4:54:26 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -h
+usage: http-server [path] [options]
+
+options:
+  -p           Port to use [8080]
+  -a           Address to use [0.0.0.0]
+  -d           Show directory listings [true]
+  -i           Display autoIndex [true]
+  -g --gzip    Serve gzip files when possible [false]
+  -e --ext     Default file extension if none supplied [none]
+  -s --silent  Suppress log messages from output
+  --cors[=headers]   Enable CORS via the "Access-Control-Allow-Origin" header
+                     Optionally provide CORS headers list separated by commas
+  -o [path]    Open browser window after starting the server
+  -c           Cache time (max-age) in seconds [3600], e.g. -c10 for 10 seconds.
+               To disable caching, use -c-1.
+  -U --utc     Use UTC time format in log messages.
+
+  -P --proxy   Fallback proxy if the request cannot be resolved. e.g.: http://someurl.com
+
+  -S --ssl     Enable https.
+  -C --cert    Path to ssl cert file (default: cert.pem).
+  -K --key     Path to ssl key file (default: key.pem).
+
+  -r --robots  Respond to /robots.txt [User-agent: *\nDisallow: /]
+  --no-dotfiles  Do not show dotfiles
+  -h --help    Print this list and exit.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:56:50 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:56:54 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:56:56 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 5811a17074a2b88fda93
+Version: webpack 4.29.6
+Time: 1468ms
+Built at: 03/14/2019 4:57:16 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ webpack --mode=development
+Hash: 721507440f531945551b
+Version: webpack 4.29.6
+Time: 1587ms
+Built at: 03/14/2019 4:58:32 PM
+   Asset      Size  Chunks             Chunk Names
+build.js  1.36 MiB    main  [emitted]  main
+Entrypoint main = build.js
+[./node_modules/css-loader/index.js!./src/css/index.css] ./node_modules/css-loader!./src/css/index.css 880 bytes {main} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {main} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {main} [built]
+[./src/css/index.css] 1010 bytes {main} [built]
+[./src/js/index.js] 13.7 KiB {main} [built]
+    + 275 hidden modules
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 5811a17074a2b88fda93
+Version: webpack 4.29.6
+Time: 1398ms
+Built at: 03/14/2019 4:58:44 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 16:59:02 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:59:10 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:59:11 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:59:31 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 16:59:33 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+Hash: 5811a17074a2b88fda93
+Version: webpack 4.29.6
+Time: 1406ms
+Built at: 03/14/2019 4:59:48 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.7 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:00:00 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1 -p 8010
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8010
+  http://10.142.124.38:8010
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:01:31 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:01:31 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:01:31 GMT-0700 (Pacific Daylight Time)] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:01:31 GMT-0700 (Pacific Daylight Time)] "GET /favicon.ico" Error (404): "Not found"
+[Thu Mar 14 2019 17:01:49 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:01:49 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.142.124.38:8080
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:02:20 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1 -p 8010
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8010
+  http://10.142.124.38:8010
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:02:49 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:02:49 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1 -p 8010
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8010
+  http://10.142.124.38:8010
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:03:33 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:03:33 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:03:33 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:03:33 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ npm run start
+
+> casino-ethereum@1.0.0 start /Users/katherinepeng 1/Desktop/blockchainDapp
+> webpack
+
+^[[AHash: 42dbb3ba54d0c6ac24d1
+Version: webpack 4.29.6
+Time: 5393ms
+Built at: 03/14/2019 5:03:45 PM
+   Asset     Size  Chunks                    Chunk Names
+build.js  283 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = build.js
+[104] ./src/js/index.js 13.6 KiB {0} [built]
+[227] (webpack)/buildin/module.js 497 bytes {0} [built]
+[228] (webpack)/buildin/global.js 472 bytes {0} [built]
+[261] ./src/css/index.css 1010 bytes {0} [built]
+[262] ./node_modules/css-loader!./src/css/index.css 880 bytes {0} [built]
+    + 261 hidden modules
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  build.js (283 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (283 KiB)
+      build.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+airbears2-10-142-124-151:blockchainDapp kpeng$ http-server -c-1 -p 8010
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8010
+  http://10.142.124.38:8010
+Hit CTRL-C to stop the server
+[Thu Mar 14 2019 17:03:53 GMT-0700 (Pacific Daylight Time)] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+[Thu Mar 14 2019 17:03:53 GMT-0700 (Pacific Daylight Time)] "GET /build.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+^Chttp-server stopped.
+airbears2-10-142-124-151:blockchainDapp kpeng$ 
